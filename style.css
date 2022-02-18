@@ -1,0 +1,131 @@
+/* ==UserStyle==
+@name           Medium - towards data science
+@license        MIT
+
+==/UserStyle== */
+@-moz-document regexp("\\S*(medium.com)\\S*"), regexp("\\S*(towardsdatascience)\\S*"), regexp("\\S*(softwaremill)\\S*"), regexp("\\S*(devcenter)\\S*") {
+@media (prefers-color-scheme: dark) {
+  /* Disable */
+  div:not(.bp) {
+    background: transparent !important;
+    background-color: transparent;
+  }
+
+  /* Text */
+  div.u-textColorNormal,
+  h1.u-textColorDark,
+  p,
+  td,
+  span,
+  div,
+  figcaption,
+  li,
+  a,
+  h1,
+  h2,
+  .uiScale .ui-h1,
+  .uiScale .ui-h2,
+  .uiScale .ui-h3,
+  .uiScale .ui-h4,
+  .uiScale .ui-summary,
+  .uicapsSubtle,
+  .uiScale .ui-summary,
+  .uiScale .ds-link--styleSubtle,
+  h3,
+  h4,
+  .ml,
+  .rs,
+  .qt,
+  .wg {
+    color: #f8f8f2 !important;
+    background-color: transparent;
+  }
+  
+  a {
+    text-decoration: underline !important;
+  }
+
+  /* Root */
+  .u-backgroundWhite,
+  section,
+  body,
+  .qa,
+  .rj{
+    background-color: #282a36 !important;
+    color: #f8f8f2 !important;
+  }
+
+  /* code, pre */
+  pre,
+  .ke,
+  .oy,
+  .qb,
+  .pe,
+  .ir,
+  .jl {
+    background-color: #51411a !important;
+    color: #eac878 !important
+  }
+  .gist .highlight,
+  .gist .blob-wrapper,
+  .gist .gist-data,
+  .gist .gist-file {
+    background-color: #1e2029!important;
+  }
+
+  /* Get rid of the highlight */
+  .pj,
+  .ui,
+  .vh,
+  .xt,
+  .yd,
+  .wm,
+  .zx {
+    color: #f8f8f2 !important;
+    background-color: transparent;
+  }
+  .qs {
+    color: #f8f8f2 !important;
+    background-color: transparent;
+  }
+
+  /* Popup */
+  .bp {
+    background-color: #282a36 !important;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 20px !important;
+  }
+
+  /* Logo */
+  svg,
+  .aw,
+  .ax {
+    fill: #f8f8f2 !important;
+  }
+
+  /* Buttons */
+  button {
+    color: #f8f8f2 !important;
+    background-color: #282a36 !important;
+    border-color: #f8f8f2 !important;
+  }
+  .oj,
+  .oa,
+  .qk,
+  .yq,
+  a:hover,
+  li:hover,
+  button:hover {
+    background-color: #494963 !important;
+  }
+  button:selected {
+    color: #f8f8f2 !important;
+  }
+
+  /* Navigation */
+  nav {
+    background-color: #6a737d33 !important;
+    backdrop-filter: blur(10px) saturate(125%);
+    padding-bottom: 5px;
+  }
+}
+}
